@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<!--
+    Práctica 6: Uso de Assertions y Anotaciones con TestNG en Selenium
+    Sistema evaluado: OrangeHRM (https://opensource-demo.orangehrmlive.com)
+    Total: 16 tests (4 positivos + 4 negativos + 4 UI + 4 navegación)
+-->
+<suite name="Practica6 - Assertions y Anotaciones TestNG" verbose="1">
+
+    <!-- Grupo 1: Casos Positivos -->
+    <test name="Casos Positivos">
+        <classes>
+            <class name="tests.TestPositivos"/>
+        </classes>
+    </test>
+
+    <!-- Grupo 2: Casos Negativos -->
+    <test name="Casos Negativos">
+        <classes>
+            <class name="tests.TestNegativos"/>
+        </classes>
+    </test>
+
+    <!-- Grupo 3: Validación de Interfaz (UI) -->
+    <test name="Validacion de Interfaz UI">
+        <classes>
+            <class name="tests.TestValidacionUI"/>
+        </classes>
+    </test>
+
+    <!-- Grupo 4: Navegación -->
+    <test name="Navegacion del Sistema">
+        <classes>
+            <class name="tests.TestNavegacion"/>
+        </classes>
+    </test>
+
+</suite>
