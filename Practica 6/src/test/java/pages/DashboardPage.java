@@ -57,9 +57,10 @@ public class DashboardPage {
         wait.until(ExpectedConditions.urlContains("pim"));
     }
 
+    // DESPUÉS — funciona con 20s
     public void goToRecruitment() {
-        wait.until(ExpectedConditions.elementToBeClickable(menuRecruitment)).click();
-        wait.until(ExpectedConditions.urlContains("recruitment"));
+        longWait.until(ExpectedConditions.elementToBeClickable(menuRecruitment)).click();
+        longWait.until(ExpectedConditions.urlContains("recruitment"));
     }
 
     public void goToDashboard() {
